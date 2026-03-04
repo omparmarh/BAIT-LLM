@@ -1,0 +1,74 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+dist/
+.npm
+*.tsbuildinfo
+
+# ========================
+# Databases (local only)
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.*
+*.env
+secrets.json
+config.local.*
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDE / Editor
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.tmp
+*.cache

@@ -1,0 +1,28 @@
+# training/mlx_config.yaml
+# Optimized for 8GB M1 Mac
+
+# Model and path
+model: "mlx-community/Qwen2.5-7B-Instruct-4bit" # Using 4-bit to fit in 8GB RAM
+
+# Dataset
+data: "datasets"
+train_set: "bait_instructions.jsonl"
+
+# LoRA parameters
+lora_layers: 16
+lora_parameters:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: ["q_proj", "v_proj"]
+
+# Training parameters
+batch_size: 1
+iters: 500  # Start with small number to test
+learning_rate: 2e-4
+steps_per_report: 10
+steps_per_eval: 50
+resume_adapter_file: null
+
+# Device
+device: "gpu"
